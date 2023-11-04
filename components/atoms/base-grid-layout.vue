@@ -3,8 +3,8 @@
     <GridLayout
       :layout="layout"
       :responsive="responsive"
-      :col-num="36"
-      :row-height="25"
+      :col-num="38"
+      :row-height="20"
     >
       <GridItem
         v-for="(item, index) in layout"
