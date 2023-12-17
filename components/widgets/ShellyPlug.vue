@@ -2,7 +2,7 @@
   <atoms-base-widget
     :available="available.val.value"
     icon="mdi-washing-machine"
-    title="Trockner"
+    title="Waschmaschiene"
   >
     <div
       class="d-flex flex-grow flex-column mb-4 justify-center align-center h-100"

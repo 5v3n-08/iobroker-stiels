@@ -15,15 +15,15 @@
             <slot name="prepend-end" />
           </div>
         </v-col>
-        <v-col class="mr-2 d-flex flex-column">
-          <b
-            v-if="title"
-            class="d-flex justify-center align-center"
-            :style="{ 'min-height': '34px' }"
-          >
-            {{ title }}
-          </b>
-        </v-col>
+        <!-- <v-col class="mr-2 d-flex flex-column"> -->
+        <b
+          v-if="title"
+          class="base-widget-title"
+          :style="{ 'min-height': '34px' }"
+        >
+          {{ title }}
+        </b>
+        <!-- </v-col> -->
       </v-row>
     </div>
     <div class="base-widget-content">
@@ -56,6 +56,12 @@ export default defineComponent({
 }
 </style>
 <style scoped>
+.base-widget-title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 12px;
+}
 .base-widget-content {
   position: absolute;
   top: 0;
